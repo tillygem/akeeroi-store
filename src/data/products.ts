@@ -114,14 +114,14 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-350-28.jpeg",
     images: ["/images/ak-350-28.jpeg", "/images/ak-350-29.jpeg", "/images/ak-350-30.jpeg", "/images/ak-350-31.jpeg", "/images/ak-350-32.jpeg", "/images/ak-350-33.jpeg", "/images/ak-350-34.jpeg"]
   },
-  // --- NEW ADDITION 2 ---
+  
   {
     id: "ak-350-singles-new",
     name: "Premium Comfort Heel",
     price: 350,
     category: "heels",
     coverImage: "/images/ak-350-46.jpeg",
-    images: ["/images/ak-350-46.jpeg"] // Single image product
+    images: ["/images/ak-350-46.jpeg"] 
   },
   {
     id: "ak-400-grp-stones",
@@ -140,12 +140,11 @@ export const PRODUCTS: Product[] = [
     images: ["/images/ak-400-5.jpeg", "/images/ak-400-6.jpeg", "/images/ak-400-7.jpeg", "/images/ak-400-14.jpeg"]
   },
 
-  // --- CATEGORY: HEELS ---
   {
     id: "ak-300-grp-high",
-    name: "Elevated Slingback Heel",
+    name: "Elevated Slingback",
     price: 300,
-    category: "heels",
+    category: "flats",
     coverImage: "/images/ak-300-10.jpeg",
     images: ["/images/ak-300-10.jpeg", "/images/ak-300-11.jpeg"]
   },

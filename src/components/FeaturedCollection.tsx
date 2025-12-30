@@ -4,8 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { PRODUCTS } from "@/data/products"; // <--- Import Real Data
-import ProductCard from "@/components/ProductCard"; // <--- Import Smart Card
+import { PRODUCTS } from "@/data/products"; 
+import ProductCard from "@/components/ProductCard"; 
 
 export default function FeaturedCollection() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
@@ -14,20 +14,17 @@ export default function FeaturedCollection() {
     setActiveDropdown(activeDropdown === name ? null : name);
   };
 
-  // Select 8 specific "Hero" products to display on the homepage
-  // You can change these IDs to whichever ones you want to feature!
   const FEATURED_ITEMS = [
-    "ak-250-grp1",       // Signature Slingback
-    "ak-300-grp-high",   // Heel
-    "ak-200-grp1",       // Classic Flat
-    "ak-400-grp-stones", // Luxury Stone Flat
-    "ak-350-grp-loafers",// Loafer
-    "ak-300-grp-floral", // Floral Heel
-    "ak-250-grp-sandal-1", // Sandal
-    "ak-350-grp-kitten-sling" // Kitten Heel
+    "ak-250-grp1",       
+    "ak-200-grp1",       
+    "ak-500-luxury",   
+    "ak-400-grp-stones", 
+    "ak-350-grp-loafers",
+    "ak-300-grp-floral", 
+    "ak-250-grp-sandal-1", 
+    "ak-350-grp-kitten-sling" 
   ];
 
-  // Filter the full list to get only these 8 items
   const displayProducts = PRODUCTS.filter(p => FEATURED_ITEMS.includes(p.id));
 
   return (
