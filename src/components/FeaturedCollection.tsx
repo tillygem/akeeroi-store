@@ -36,7 +36,7 @@ export default function FeaturedCollection() {
       {/* SECTION HEADER */}
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-4xl font-serif text-[#800020] mb-2">
-          Curated Collection
+          Luxury Collection
         </h2>
         <p className="text-gray-500 text-sm uppercase tracking-widest">
           Find your perfect pair
