@@ -12,12 +12,12 @@ export default function Hero() {
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src="/images/shoes.png" 
-          alt="Luxury Heels Background"
+          alt="Luxury Shoes Background"
           fill
           className="object-cover object-center"
           priority
         />
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-[#420010]/40" />
       </div>
 
       <div className="relative z-10 flex flex-col justify-center items-center h-full text-center px-4 pt-28">
@@ -38,7 +38,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-gray-200 text-base md:text-2xl font-sans leading-relaxed mb-8 max-w-2xl mx-auto">
-            Discover the finest selection of handcrafted heels designed for the woman who commands the room.
+            Discover the finest selection of handcrafted footwears designed for the woman who commands the room.
           </p>
           
           <div className="flex flex-row gap-4 justify-center pb-4 items-center">

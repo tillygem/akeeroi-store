@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image"; 
-import { Mail, MapPin, ArrowUp } from "lucide-react";
+import { Mail, MapPin, ArrowUp, Instagram, Phone } from "lucide-react"; 
 
 const TikTokIcon = ({ size = 20, color = "currentColor" }) => (
   <svg 
@@ -28,7 +28,7 @@ export default function Footer() {
       
       {/* LUXURY WATERMARK */}
       <div className="absolute bottom-0 left-0 w-full overflow-hidden pointer-events-none select-none flex justify-center opacity-[0.03]">
-        <h1 className="text-[18vw] font-serif font-bold text-white tracking-widest leading-none whitespace-nowrap">
+        <h1 className="text-[16vw] font-serif font-bold text-white tracking-widest leading-none whitespace-nowrap">
           AKEE-ROI
         </h1>
       </div>
@@ -62,8 +62,8 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3 text-sm text-white/70 font-light">
               <li><Link href="/shop" className="hover:text-white hover:translate-x-1 transition-all inline-block">New Arrivals</Link></li>
-              <li><Link href="/shop?cat=flats" className="hover:text-white hover:translate-x-1 transition-all inline-block">Signature Flats</Link></li>
-              <li><Link href="/shop?cat=heels" className="hover:text-white hover:translate-x-1 transition-all inline-block">Luxury Heels</Link></li>
+              <li><Link href="/shop" className="hover:text-white hover:translate-x-1 transition-all inline-block">Signature Flats</Link></li>
+              <li><Link href="/shop" className="hover:text-white hover:translate-x-1 transition-all inline-block">Luxury Heels</Link></li>
               <li><Link href="/brand" className="hover:text-white hover:translate-x-1 transition-all inline-block">Our Story</Link></li>
             </ul>
           </div>
@@ -90,22 +90,24 @@ export default function Footer() {
             <div className="space-y-4">
                 {/* Location */}
                 <div className="flex items-start gap-3 text-white/70 text-sm font-light">
-                <MapPin size={18} className="text-[#D4AF37] shrink-0 mt-0.5" />
-                <span>Accra, Ghana</span>
+                  <MapPin size={18} className="text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span>Accra & Kumasi, Ghana</span>
                 </div>
 
                 {/* Email */}
                 <a 
-                href="mailto:akeeroicollections@gmail.com" 
-                className="flex items-start gap-3 text-white/70 text-sm font-light hover:text-white transition-colors"
+                  href="mailto:akeeroicollections@gmail.com" 
+                  className="flex items-start gap-3 text-white/70 text-sm font-light hover:text-white transition-colors"
                 >
-                <Mail size={18} className="text-[#D4AF37] shrink-0 mt-0.5" />
-                <span className="break-all">akeeroicollections@gmail.com</span>
+                  <Mail size={18} className="text-[#D4AF37] shrink-0 mt-0.5" />
+                  <span className="break-all">akeeroicollections@gmail.com</span>
                 </a>
             </div>
 
             {/* Social Icons */}
             <div className="pt-2 flex gap-4">
+              
+              {/* TikTok */}
               <a 
                 href="https://www.tiktok.com/@akeeroicollection?_r=1&_t=ZN-92ZnjEyVVBK" 
                 target="_blank" 
@@ -114,6 +116,27 @@ export default function Footer() {
               >
                 <TikTokIcon size={18} />
               </a>
+
+              {/* Instagram */}
+              <a 
+                href="https://www.instagram.com/akee_roi_?igsh=MTQ0YWZrNXN1czM0YQ==" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-[#420010] transition-all duration-300"
+              >
+                <Instagram size={18} />
+              </a>
+
+              {/* WhatsApp */}
+              <a 
+                href="https://wa.me/233243449961" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white hover:bg-[#D4AF37] hover:border-[#D4AF37] hover:text-[#420010] transition-all duration-300"
+              >
+                <Phone size={18} />
+              </a>
+
             </div>
           </div>
         </div>

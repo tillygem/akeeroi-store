@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Playfair_Display, Montserrat, Great_Vibes } from "next/font/google"; 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer"; 
+import Footer from "@/components/Footer";
+import { CartProvider } from "@/context/CartContext"; 
 
 const playfair = Playfair_Display({ 
   subsets: ["latin"],
@@ -14,7 +15,6 @@ const montserrat = Montserrat({
   variable: "--font-montserrat",
 });
 
-// Add this script font
 const greatVibes = Great_Vibes({ 
   weight: "400",
   subsets: ["latin"],
@@ -34,11 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${montserrat.className} ${greatVibes.variable} bg-[#FDFBF7] text-gray-900`}>
-        <Navbar /> 
-        <main className="min-h-screen"> 
+        <CartProvider>
+        <Navbar />  
           {children}
           <Footer />
-        </main>
+          </CartProvider>
       </body>
     </html>
   );

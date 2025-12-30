@@ -1,30 +1,34 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
-import { ChevronDown, Filter } from "lucide-react";
+import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-
-// MOCK DATA 
-const PRODUCTS = [
-  { id: 1, name: "Teal Knit Flat", price: 250, category: "flat", collection: "new", image: "/images/ak-250.jpeg" },
-  { id: 2, name: "Brown Gem Slingback", price: 300, category: "flat", collection: "best", image: "/images/ak-300-10.jpeg" },
-  { id: 3, name: "Bronze Mesh Mule", price: 400, category: "flat", collection: "luxury", image: "/images/ak-400.jpeg" },
-  { id: 4, name: "Burgundy Gold Flat", price: 250, category: "flat", collection: "new", image: "/images/ak-250-18.jpeg" },
-  { id: 5, name: "Noir Crystal Edition", price: 300, category: "flat", collection: "best", image: "/images/ak-300.jpeg" },
-  { id: 6, name: "Cream Gold Slingback", price: 400, category: "flat", collection: "luxury", image: "/images/ak-400-12.jpeg" },
-  { id: 7, name: "Pink Knit Comfort", price: 250, category: "flat", collection: "new", image: "/images/ak-250-15.jpeg" },
-  { id: 8, name: "Midnight Sphere Flat", price: 300, category: "flat", collection: "best", image: "/images/ak-300-2.jpeg" },
-];
+import { PRODUCTS } from "@/data/products"; // <--- Import Real Data
+import ProductCard from "@/components/ProductCard"; // <--- Import Smart Card
 
 export default function FeaturedCollection() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
-  const [filterType, setFilterType] = useState("all"); 
 
   const toggleDropdown = (name: string) => {
     setActiveDropdown(activeDropdown === name ? null : name);
   };
+
+  // Select 8 specific "Hero" products to display on the homepage
+  // You can change these IDs to whichever ones you want to feature!
+  const FEATURED_ITEMS = [
+    "ak-250-grp1",       // Signature Slingback
+    "ak-300-grp-high",   // Heel
+    "ak-200-grp1",       // Classic Flat
+    "ak-400-grp-stones", // Luxury Stone Flat
+    "ak-350-grp-loafers",// Loafer
+    "ak-300-grp-floral", // Floral Heel
+    "ak-250-grp-sandal-1", // Sandal
+    "ak-350-grp-kitten-sling" // Kitten Heel
+  ];
+
+  // Filter the full list to get only these 8 items
+  const displayProducts = PRODUCTS.filter(p => FEATURED_ITEMS.includes(p.id));
 
   return (
     <section className="py-20 px-4 md:px-8 bg-white">
@@ -39,7 +43,7 @@ export default function FeaturedCollection() {
         </p>
       </div>
 
-      {/* FILTER BAR */}
+      {/* FILTER BAR (Visual Navigation) */}
       <div className="relative flex flex-wrap justify-center gap-4 md:gap-8 mb-12 z-20">
         
         {/* COLLECTIONS DROPDOWN */}
@@ -58,9 +62,9 @@ export default function FeaturedCollection() {
                 className="absolute top-full left-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-lg overflow-hidden z-30"
               >
                 <div className="flex flex-col text-sm text-gray-600">
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Latest Arrivals</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Best Sellers</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Limited Edition</button>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Latest Arrivals</Link>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Best Sellers</Link>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Limited Edition</Link>
                 </div>
               </motion.div>
             )}
@@ -83,10 +87,9 @@ export default function FeaturedCollection() {
                 className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-lg overflow-hidden z-30"
               >
                 <div className="flex flex-col text-sm text-gray-600">
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">All Shoes</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Flats & Sandals</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Heels (Coming Soon)</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Boots</button>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">All Shoes</Link>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Flats & Sandals</Link>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Heels</Link>
                 </div>
               </motion.div>
             )}
@@ -109,9 +112,9 @@ export default function FeaturedCollection() {
                 className="absolute top-full right-0 mt-2 w-48 bg-white border border-gray-100 shadow-xl rounded-lg overflow-hidden z-30"
               >
                 <div className="flex flex-col text-sm text-gray-600">
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Low (Under 250 GHS)</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Medium (250 - 350 GHS)</button>
-                  <button className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">High (400 GHS+)</button>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Low (Under 250 GHS)</Link>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">Medium (250 - 350 GHS)</Link>
+                  <Link href="/shop" className="px-4 py-3 text-left hover:bg-gray-50 hover:text-[#800020]">High (400 GHS+)</Link>
                 </div>
               </motion.div>
             )}
@@ -119,36 +122,11 @@ export default function FeaturedCollection() {
         </div>
       </div>
 
-      {/* PRODUCT GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-8 md:gap-8 max-w-7xl mx-auto">
-        {PRODUCTS.map((product) => (
-          <Link href={`/product/${product.id}`} key={product.id} className="group cursor-pointer">
-            {/* IMAGE CARD */}
-            <div className="relative w-full aspect-4/5 bg-gray-100 rounded-md overflow-hidden mb-3">
-              <Image
-                src={product.image}
-                alt={product.name}
-                fill
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
-              
-              {product.price === 250 && (
-                <div className="absolute top-2 left-2 bg-white/90 text-[10px] font-bold px-2 py-1 uppercase tracking-wider text-[#800020]">
-                  New
-                </div>
-              )}
-            </div>
-
-            {/* PRODUCT INFO */}
-            <div className="text-left">
-              <h3 className="text-gray-900 font-medium text-sm md:text-base truncate group-hover:text-[#800020] transition-colors">
-                {product.name}
-              </h3>
-              <p className="text-gray-500 text-xs md:text-sm mt-1">
-                GHS {product.price.toFixed(2)}
-              </p>
-            </div>
-          </Link>
+      {/* REAL PRODUCT GRID */}
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 max-w-7xl mx-auto">
+        {displayProducts.map((product) => (
+          // Using the Smart Component here ensures Swiping & Links work perfectly!
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
 
