@@ -1,9 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react"; 
 import Image from "next/image";
 import Link from "next/link";
-import { ChevronLeft, ChevronRight, ShoppingBag } from "lucide-react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Product } from "@/data/products";
 
 interface ProductCardProps {
@@ -12,15 +12,25 @@ interface ProductCardProps {
 
 export default function ProductCard({ product }: ProductCardProps) {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isHovered, setIsHovered] = useState(false); 
 
-  // Use the list of images if available, otherwise just the cover image
   const images = product.images && product.images.length > 0 
     ? product.images 
     : [product.coverImage];
 
-  // Logic to cycle images (Next/Prev)
+  // Auto-scroll logic
+  useEffect(() => {
+    if (images.length <= 1 || isHovered) return;
+
+    const timer = setInterval(() => {
+      setCurrentImageIndex((prev) => (prev + 1) % images.length);
+    }, 3000); 
+
+    return () => clearInterval(timer);
+  }, [images.length, isHovered]);
+
   const nextImage = (e: React.MouseEvent) => {
-    e.preventDefault(); // Prevent clicking the Link
+    e.preventDefault();
     setCurrentImageIndex((prev) => (prev + 1) % images.length);
   };
 
@@ -29,14 +39,18 @@ export default function ProductCard({ product }: ProductCardProps) {
     setCurrentImageIndex((prev) => (prev - 1 + images.length) % images.length);
   };
 
-  // Logic to select specific color dot
   const selectImage = (e: React.MouseEvent, index: number) => {
     e.preventDefault();
     setCurrentImageIndex(index);
   };
 
   return (
-    <Link href={`/product/${product.id}`} className="group block">
+    <Link 
+      href={`/product/${product.id}`} 
+      className="group block"
+      onMouseEnter={() => setIsHovered(true)} 
+      onMouseLeave={() => setIsHovered(false)}
+    >
       
       {/* IMAGE CONTAINER */}
       <div className="relative w-full aspect-4/5 bg-gray-100 rounded-lg overflow-hidden mb-4">
@@ -54,13 +68,13 @@ export default function ProductCard({ product }: ProductCardProps) {
           <>
             <button 
               onClick={prevImage}
-              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-1 rounded-full text-[#800020] opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white"
+              className="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 p-1 rounded-full text-[#800020] opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white z-10"
             >
               <ChevronLeft size={18} />
             </button>
             <button 
               onClick={nextImage}
-              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-1 rounded-full text-[#800020] opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white"
+              className="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 p-1 rounded-full text-[#800020] opacity-0 group-hover:opacity-100 transition-opacity hover:bg-white z-10"
             >
               <ChevronRight size={18} />
             </button>
@@ -69,13 +83,13 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* LUXURY TAG (For items 400+) */}
         {product.price >= 400 && (
-          <div className="absolute top-2 right-2 bg-[#D4AF37] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider">
+          <div className="absolute top-2 right-2 bg-[#D4AF37] text-white text-[10px] font-bold px-2 py-1 uppercase tracking-wider z-10">
             Luxury
           </div>
         )}
 
         {/* SIZE BADGE (Bottom Left Overlay) */}
-        <div className="absolute bottom-2 left-2 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-medium text-gray-600 uppercase tracking-wide">
+        <div className="absolute bottom-2 left-2 bg-white/90 backdrop-blur-sm px-2 py-1 rounded text-[10px] font-medium text-gray-600 uppercase tracking-wide z-10">
           Size 37 - 42
         </div>
       </div>

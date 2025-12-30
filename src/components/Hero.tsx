@@ -9,6 +9,7 @@ export default function Hero() {
   return (
     <section className="relative w-full h-screen overflow-hidden">
       
+      {/* Background Image */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Image
           src="/images/shoes.png" 
@@ -17,6 +18,7 @@ export default function Hero() {
           className="object-cover object-center"
           priority
         />
+        {/* Overlay */}
         <div className="absolute inset-0 bg-[#420010]/40" />
       </div>
 
@@ -28,16 +30,16 @@ export default function Hero() {
           transition={{ duration: 1, ease: "easeOut" }}
           className="max-w-4xl"
         >
-          <span className="text-[#D4AF37] font-bold tracking-[0.2em] uppercase text-xs md:text-base mb-3 block">
+          <span className="text-[#D4AF37] font-bold tracking-[0.2em] uppercase text-sm md:text-base mb-4 block drop-shadow-[0_2px_2px_rgba(0,0,0,0.8)]">
             Discover Current Designs
           </span>
           
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-none mb-5 drop-shadow-lg">
+          <h1 className="text-6xl md:text-7xl lg:text-8xl font-serif text-white leading-none mb-5 drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">
             Walk in <br />
             <span className="italic">Luxury.</span>
           </h1>
           
-          <p className="text-gray-200 text-base md:text-2xl font-sans leading-relaxed mb-8 max-w-2xl mx-auto">
+          <p className="text-gray-200 text-base md:text-2xl font-sans leading-relaxed mb-8 max-w-2xl mx-auto drop-shadow-md">
             Explore the finest selection of handcrafted footwears designed for the woman who commands the room.
           </p>
           
