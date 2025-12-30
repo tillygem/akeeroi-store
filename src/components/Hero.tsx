@@ -29,7 +29,7 @@ export default function Hero() {
           className="max-w-4xl"
         >
           <span className="text-[#D4AF37] font-bold tracking-[0.2em] uppercase text-xs md:text-base mb-3 block">
-            New Collection 2025
+            Discover Current Designs
           </span>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif text-white leading-none mb-5 drop-shadow-lg">
@@ -38,7 +38,7 @@ export default function Hero() {
           </h1>
           
           <p className="text-gray-200 text-base md:text-2xl font-sans leading-relaxed mb-8 max-w-2xl mx-auto">
-            Discover the finest selection of handcrafted footwears designed for the woman who commands the room.
+            Explore the finest selection of handcrafted footwears designed for the woman who commands the room.
           </p>
           
           <div className="flex flex-row gap-4 justify-center pb-4 items-center">
