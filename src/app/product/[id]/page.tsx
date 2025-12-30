@@ -4,9 +4,10 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams, useRouter } from "next/navigation"; 
-import { Star, Truck, ShieldCheck, Minus, Plus, ShoppingBag } from "lucide-react";
+import { Star, Truck, ShieldCheck, Minus, Plus, ShoppingBag, X } from "lucide-react";
 import { PRODUCTS } from "@/data/products";
-import { useCart } from "@/context/CartContext"; 
+import { useCart } from "@/context/CartContext";
+import { toast } from "react-hot-toast"; 
 
 export default function ProductDetailsPage() {
   const params = useParams();
@@ -33,10 +34,21 @@ export default function ProductDetailsPage() {
 
   const handleAddToCart = (checkoutImmediately = false) => {
     if (!selectedSize) {
-      alert("Please select a size first.");
+      toast.error("Please select a size first", {
+        style: {
+          border: '1px solid #D4AF37',
+          padding: '16px',
+          color: '#800020',
+        },
+        iconTheme: {
+          primary: '#D4AF37',
+          secondary: '#FFFAEE',
+        },
+      });
       return;
     }
 
+    // Add to Global Cart
     addToCart({
       id: `${product.id}-${selectedSize}-${currentImageIndex}`, 
       productId: product.id,
@@ -50,7 +62,49 @@ export default function ProductDetailsPage() {
     if (checkoutImmediately) {
       router.push("/checkout"); 
     } else {
-      alert("Added to cart!"); 
+      // CUSTOM LUXURY TOAST 
+      toast.custom((t) => (
+        <div
+          className={`${
+            t.visible ? 'animate-enter' : 'animate-leave'
+          } max-w-md w-full bg-[#FDFBF7] shadow-lg rounded-lg pointer-events-auto flex ring-1 ring-[#D4AF37]`}
+        >
+          <div className="flex-1 w-0 p-4">
+            <div className="flex items-start">
+              <div className="shrink-0 pt-0.5">
+                {/* Small thumbnail of the shoe added */}
+                <div className="relative h-10 w-10 rounded-md overflow-hidden">
+                  <Image
+                    src={images[currentImageIndex]}
+                    alt={product.name}
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+              <div className="ml-3 flex-1">
+                <p className="text-sm font-medium text-[#800020]">
+                  Added to Cart
+                </p>
+                <p className="mt-1 text-xs text-gray-500">
+                  {product.name} (Size {selectedSize})
+                </p>
+                <Link href="/checkout" className="mt-2 block text-xs font-bold text-[#D4AF37] hover:text-[#800020] uppercase tracking-wider">
+                  View Bag →
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="flex border-l border-gray-200">
+            <button
+              onClick={() => toast.dismiss(t.id)}
+              className="w-full border border-transparent rounded-none rounded-r-lg p-4 flex items-center justify-center text-sm font-medium text-[#800020] hover:text-[#D4AF37] focus:outline-none"
+            >
+              <X size={16} />
+            </button>
+          </div>
+        </div>
+      ), { duration: 4000 });
     }
   };
 
