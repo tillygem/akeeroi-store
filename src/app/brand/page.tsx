@@ -5,7 +5,7 @@ export default function BrandPage() {
   return (
     <main className="bg-[#FDFBF7]">
       
-      {/* 1. BRAND HERO SECTION */}
+      {/* BRAND HERO SECTION */}
       <section className="relative h-[85vh] flex items-center justify-center overflow-hidden">
         <Image
           src="/images/brand-hero.png" 
@@ -27,15 +27,13 @@ export default function BrandPage() {
         </div>
       </section>
 
-
-      {/* 2. THE NARRATIVE */}
       <section className="py-24 px-6 md:px-12 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           
           {/* Image Side */}
           <div className="relative h-125 w-full rounded-lg overflow-hidden shadow-2xl">
             <Image
-              src="/images/ak-300-1.jpeg"
+              src="/images/ak-350-46.jpeg"
               alt="Global Sourcing"
               fill
               className="object-cover"
@@ -62,7 +60,7 @@ export default function BrandPage() {
       </section>
 
 
-      {/* 3. OUR PHILOSOPHY */}
+      {/* OUR PHILOSOPHY */}
       <section className="bg-white py-24 px-6">
         <div className="max-w-6xl mx-auto">
           
@@ -115,7 +113,7 @@ export default function BrandPage() {
       </section>
 
 
-      {/* 4. VISUAL MOODBOARD */}
+      {/* VISUAL MOODBOARD */}
       <section className="py-24 px-4 bg-[#FDFBF7]">
          <div className="text-center mb-12">
             <h2 className="text-2xl font-serif text-[#800020] uppercase tracking-widest">
@@ -131,7 +129,7 @@ export default function BrandPage() {
                <Image src="/images/brand-ig-1.png" alt="Moodboard 1" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
              </div>
              <div className="relative aspect-square group overflow-hidden rounded-lg">
-               <Image src="/images/brand-ig-2.png" alt="Moodboard 2" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+               <Image src="/images/ak-500-1.jpeg" alt="Moodboard 2" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
              </div>
              <div className="relative aspect-square group overflow-hidden rounded-lg">
                <Image src="/images/brand-ig-3.png" alt="Moodboard 3" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />

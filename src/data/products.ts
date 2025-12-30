@@ -4,7 +4,7 @@ export interface Product {
   price: number;
   category: "heels" | "flats" | "sandals" | "slippers";
   coverImage: string;
-  images?: string[]; // For products with multiple colors
+  images?: string[]; 
   isNew?: boolean;
 }
 
@@ -91,6 +91,14 @@ export const PRODUCTS: Product[] = [
     images: ["/images/ak-300-6.jpeg", "/images/ak-300-7.jpeg", "/images/ak-300-8.jpeg", "/images/ak-300-9.jpeg", "/images/ak-300-12.jpeg"]
   },
   {
+    id: "ak-300-singles-new",
+    name: "Classic Low Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-40.jpeg",
+    images: ["/images/ak-300-40.jpeg"] 
+  },
+  {
     id: "ak-350-grp-loafers",
     name: "Classic Loafer",
     price: 350,
@@ -105,6 +113,15 @@ export const PRODUCTS: Product[] = [
     category: "flats",
     coverImage: "/images/ak-350-28.jpeg",
     images: ["/images/ak-350-28.jpeg", "/images/ak-350-29.jpeg", "/images/ak-350-30.jpeg", "/images/ak-350-31.jpeg", "/images/ak-350-32.jpeg", "/images/ak-350-33.jpeg", "/images/ak-350-34.jpeg"]
+  },
+  // --- NEW ADDITION 2 ---
+  {
+    id: "ak-350-singles-new",
+    name: "Premium Comfort Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-46.jpeg",
+    images: ["/images/ak-350-46.jpeg"] // Single image product
   },
   {
     id: "ak-400-grp-stones",

@@ -74,10 +74,12 @@ export const OrderEmail: React.FC<OrderEmailProps> = ({
           <div style={{ backgroundColor: '#420010', color: '#fff', padding: '20px', borderRadius: '5px', marginBottom: '30px', textAlign: 'center' }}>
             <h3 style={{ margin: '0 0 10px 0', color: '#D4AF37', fontSize: '18px' }}>Payment Instructions</h3>
             <p style={{ margin: '0 0 15px 0', fontSize: '14px', lineHeight: '1.5' }}>
-              Please send the total amount via Mobile Money to confirm your order.
+              Please send the total amount via Mobile Money or our Bank to confirm your order.
             </p>
             <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 054 374 4805</div>
             <div style={{ fontSize: '14px' }}>Name: Ernestina Obiyaa</div>
+            <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>ECOBANK: 1441002495733</div>
+            <div style={{ fontSize: '14px' }}>Name: Esther Kwarteng</div>
             <p style={{ marginTop: '15px', fontSize: '12px', fontStyle: 'italic', opacity: 0.8 }}>
               Reference your Order ID <strong>#{orderId}</strong> when paying.
             </p>

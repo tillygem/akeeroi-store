@@ -42,14 +42,14 @@ export default function Navbar() {
             {!isSearchOpen ? (
               <>
                 {/* LEFT: BRAND LOGO */}
-                <Link href="/" className="flex flex-col items-start group">
-                  <span className="font-serif text-lg md:text-xl text-white font-bold tracking-wide leading-none group-hover:text-[#D4AF37] transition-colors">
-                    Akee-roi
-                  </span>
-                  <span className="font-script text-[#D4AF37] text-sm md:text-base -mt-1 ml-1 group-hover:text-white transition-colors">
-                    Collections
-                  </span>
-                </Link>
+                  <Link href="/" className="flex flex-col items-start group">
+                   <span className="font-serif text-lg md:text-xl text-white font-bold tracking-wide leading-none group-hover:text-[#D4AF37] transition-colors">
+                    AkEE-ROI
+                   </span>
+                   <span className="font-script text-[#D4AF37] text-sm md:text-base -mt-1 font-bold group-hover:text-white transition-colors">
+                   COLLECTIONS
+                   </span>
+                  </Link>
 
                 <div className="hidden md:flex space-x-12 items-center">
                   <Link href="/shop" className="text-white/90 hover:text-[#D4AF37] font-medium tracking-widest uppercase text-xs md:text-sm transition-colors relative group">
