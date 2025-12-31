@@ -9,7 +9,7 @@ export interface Product {
 }
 
 export const PRODUCTS: Product[] = [
-  // --- CATEGORY: FLATS ---
+  // CATEGORY: FLATS
   {
     id: "ak-200-grp1",
     name: "Classic Everyday Flat",
@@ -114,7 +114,6 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-350-28.jpeg",
     images: ["/images/ak-350-28.jpeg", "/images/ak-350-29.jpeg", "/images/ak-350-30.jpeg", "/images/ak-350-31.jpeg", "/images/ak-350-32.jpeg", "/images/ak-350-33.jpeg", "/images/ak-350-34.jpeg"]
   },
-  
   {
     id: "ak-350-singles-new",
     name: "Premium Comfort Heel",
@@ -137,14 +136,15 @@ export const PRODUCTS: Product[] = [
     price: 400,
     category: "flats",
     coverImage: "/images/ak-400-5.jpeg",
-    images: ["/images/ak-400-5.jpeg", "/images/ak-400-6.jpeg", "/images/ak-400-7.jpeg", "/images/ak-400-14.jpeg"]
+    images: ["/images/ak-400-5.jpeg", "/images/ak-400-6.jpeg", "/images/ak-400-7.jpeg", "/images/ak-400-14.jpeg", "/images/ak-400-21.jpeg"] // Added ak-400-21
   },
 
+  // CATEGORY: HEELS
   {
     id: "ak-300-grp-high",
     name: "Elevated Slingback",
     price: 300,
-    category: "flats",
+    category: "flats", 
     coverImage: "/images/ak-300-10.jpeg",
     images: ["/images/ak-300-10.jpeg", "/images/ak-300-11.jpeg"]
   },
@@ -196,8 +196,25 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-500-1.jpeg",
     images: ["/images/ak-500-1.jpeg"]
   },
+  
+  {
+    id: "ak-350-grp-pencil-block",
+    name: "Pencil-Shoe Block Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-52.jpeg",
+    images: ["/images/ak-350-52.jpeg", "/images/ak-350-53.jpeg", "/images/ak-350-54.jpeg", "/images/ak-350-55.jpeg"]
+  },
+  {
+    id: "ak-300-grp-sling-block",
+    name: "Classic Slingback Block Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-41.jpeg",
+    images: ["/images/ak-300-41.jpeg"]
+  },
 
-  // --- CATEGORY: SANDALS ---
+  // CATEGORY: SANDALS
   {
     id: "ak-250-grp-sandal-1",
     name: "Essential Strap Sandal",
@@ -222,15 +239,48 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-370-1.jpeg",
     images: ["/images/ak-370-1.jpeg", "/images/ak-370-2.jpeg", "/images/ak-370-3.jpeg", "/images/ak-370-4.jpeg", "/images/ak-370-5.jpeg", "/images/ak-370-6.jpeg", "/images/ak-370-7.jpeg", "/images/ak-370-8.jpeg", "/images/ak-370-9.jpeg"]
   },
+  
+  {
+    id: "ak-250-gold-glitter",
+    name: "Gold Glitter Slingback Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-53.jpeg",
+    images: ["/images/ak-250-53.jpeg"]
+  },
+  {
+    id: "ak-250-elongated-glitter",
+    name: "Elongated Glitter Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-54.jpeg",
+    images: ["/images/ak-250-54.jpeg"]
+  },
+  {
+    id: "ak-250-striped-sandal",
+    name: "Striped Slingback Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-48.jpeg",
+    images: ["/images/ak-250-48.jpeg", "/images/ak-250-49.jpeg", "/images/ak-250-50.jpeg", "/images/ak-250-51.jpeg"]
+  },
+  {
+    id: "ak-350-luxe-glitter",
+    name: "Luxe Glittering Sandal",
+    price: 350,
+    category: "sandals",
+    coverImage: "/images/ak-350-47.jpeg",
+    images: ["/images/ak-350-47.jpeg", "/images/ak-350-48.jpeg"]
+  },
 
-  // --- CATEGORY: SLIPPERS ---
+  // CATEGORY: SLIPPERS
   {
     id: "ak-200-grp-net",
     name: "Breathable Net Mule",
     price: 200,
     category: "slippers",
     coverImage: "/images/ak-200-9.jpeg",
-    images: ["/images/ak-200-9.jpeg", "/images/ak-200-10.jpeg", "/images/ak-200-11.jpeg"]
+    images: ["/images/ak-200-9.jpeg", "/images/ak-200-10.jpeg", "/images/ak-200-11.jpeg", "/images/ak-200-12.jpeg"] // Added ak-200-12
   },
   {
     id: "ak-250-grp-slide",
@@ -254,6 +304,15 @@ export const PRODUCTS: Product[] = [
     price: 350,
     category: "slippers",
     coverImage: "/images/ak-350-21.jpeg",
-    images: ["/images/ak-350-21.jpeg", "/images/ak-350-22.jpeg", "/images/ak-350-23.jpeg", "/images/ak-350-24.jpeg", "/images/ak-350-25.jpeg"]
+    images: ["/images/ak-350-21.jpeg", "/images/ak-350-22.jpeg", "/images/ak-350-23.jpeg", "/images/ak-350-24.jpeg", "/images/ak-350-25.jpeg", "/images/ak-350-49.jpeg", "/images/ak-350-50.jpeg", "/images/ak-350-51.jpeg"] // Added 49, 50, 51
+  },
+  
+  {
+    id: "ak-250-pearl-slipper",
+    name: "Pearl Embellished Slipper",
+    price: 250,
+    category: "slippers",
+    coverImage: "/images/ak-250-52.jpeg",
+    images: ["/images/ak-250-52.jpeg"]
   }
 ];

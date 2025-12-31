@@ -15,17 +15,19 @@ export default function FeaturedCollection() {
   };
 
   const FEATURED_ITEMS = [
-    "ak-250-grp1",       
-    "ak-200-grp1",       
-    "ak-500-luxury",   
-    "ak-400-grp-stones", 
+    "ak-350-grp-pencil-block",
+    "ak-250-grp-sandal-1",   
     "ak-350-grp-loafers",
-    "ak-300-grp-floral", 
-    "ak-250-grp-sandal-1", 
+    "ak-300-grp-floral",        
+    "ak-300-grp-sling-block",       
+    "ak-500-luxury",   
+    "ak-400-grp-stones",  
     "ak-350-grp-kitten-sling" 
   ];
 
-  const displayProducts = PRODUCTS.filter(p => FEATURED_ITEMS.includes(p.id));
+  const displayProducts = FEATURED_ITEMS.map((id) => 
+    PRODUCTS.find((p) => p.id === id)
+  ).filter((p) => p !== undefined);
 
   return (
     <section className="py-20 px-4 md:px-8 bg-white">
@@ -122,8 +124,7 @@ export default function FeaturedCollection() {
       {/* REAL PRODUCT GRID */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 max-w-7xl mx-auto">
         {displayProducts.map((product) => (
-          // Using the Smart Component here ensures Swiping & Links work perfectly!
-          <ProductCard key={product.id} product={product} />
+          product && <ProductCard key={product.id} product={product} />
         ))}
       </div>
 

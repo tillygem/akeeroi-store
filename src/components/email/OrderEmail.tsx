@@ -78,6 +78,8 @@ export const OrderEmail: React.FC<OrderEmailProps> = ({
             </p>
             <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 054 374 4805</div>
             <div style={{ fontSize: '14px' }}>Name: Ernestina Obiyaa</div>
+            <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 024 338 6458</div>
+            <div style={{ fontSize: '14px' }}>Name: Victoria Opoku Konadu</div>
             <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>ECOBANK: 1441002495733</div>
             <div style={{ fontSize: '14px' }}>Name: Esther Kwarteng</div>
             <p style={{ marginTop: '15px', fontSize: '12px', fontStyle: 'italic', opacity: 0.8 }}>
