@@ -9,7 +9,7 @@ export interface Product {
 }
 
 export const PRODUCTS: Product[] = [
-  // CATEGORY: FLATS
+  // --- CATEGORY: FLATS ---
   {
     id: "ak-200-grp1",
     name: "Classic Everyday Flat",
@@ -136,15 +136,15 @@ export const PRODUCTS: Product[] = [
     price: 400,
     category: "flats",
     coverImage: "/images/ak-400-5.jpeg",
-    images: ["/images/ak-400-5.jpeg", "/images/ak-400-6.jpeg", "/images/ak-400-7.jpeg", "/images/ak-400-14.jpeg", "/images/ak-400-21.jpeg"] // Added ak-400-21
+    images: ["/images/ak-400-5.jpeg", "/images/ak-400-6.jpeg", "/images/ak-400-7.jpeg", "/images/ak-400-14.jpeg", "/images/ak-400-21.jpeg"]
   },
 
-  // CATEGORY: HEELS
+  // --- CATEGORY: HEELS ---
   {
     id: "ak-300-grp-high",
     name: "Elevated Slingback",
     price: 300,
-    category: "flats", 
+    category: "flats", // Kept as flats per original file
     coverImage: "/images/ak-300-10.jpeg",
     images: ["/images/ak-300-10.jpeg", "/images/ak-300-11.jpeg"]
   },
@@ -196,7 +196,6 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-500-1.jpeg",
     images: ["/images/ak-500-1.jpeg"]
   },
-  
   {
     id: "ak-350-grp-pencil-block",
     name: "Pencil-Shoe Block Heel",
@@ -213,8 +212,81 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-300-41.jpeg",
     images: ["/images/ak-300-41.jpeg"]
   },
+  // --- NEW HEELS ADDED HERE ---
+  {
+    id: "ak-300-double-sling",
+    name: "Burgundy Double-Sling Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-42.jpeg",
+    images: ["/images/ak-300-42.jpeg"]
+  },
+  {
+    id: "ak-300-glitter-block",
+    name: "Glitter Block Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-43.jpeg",
+    images: ["/images/ak-300-43.jpeg", "/images/ak-300-44.jpeg", "/images/ak-300-45.jpeg", "/images/ak-300-46.jpeg"]
+  },
+  {
+    id: "ak-300-bow-pencil",
+    name: "Bow Pencil Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-47.jpeg",
+    images: ["/images/ak-300-47.jpeg", "/images/ak-300-48.jpeg"]
+  },
+  {
+    id: "ak-300-pencil-sling",
+    name: "Classic Pencil Slingback",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-49.jpeg",
+    images: ["/images/ak-300-49.jpeg", "/images/ak-300-50.jpeg"]
+  },
+  {
+    id: "ak-250-block-sling",
+    name: "Modern Block Slingback",
+    price: 250,
+    category: "heels",
+    coverImage: "/images/ak-250-55.jpeg",
+    images: ["/images/ak-250-55.jpeg", "/images/ak-250-56.jpeg"]
+  },
+  {
+    id: "ak-300-tiger-pencil",
+    name: "Tiger Print Stiletto",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-52.jpeg",
+    images: ["/images/ak-300-52.jpeg"]
+  },
+  {
+    id: "ak-300-cotton-pencil",
+    name: "Textured Black Stiletto",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-53.jpeg",
+    images: ["/images/ak-300-53.jpeg"]
+  },
+  {
+    id: "ak-300-glitter-chain",
+    name: "Glitter Chain Stiletto",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-54.jpeg",
+    images: ["/images/ak-300-54.jpeg"]
+  },
+  {
+    id: "ak-300-front-strap",
+    name: "Front-Strap Pencil Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-56.jpeg",
+    images: ["/images/ak-300-56.jpeg", "/images/ak-300-57.jpeg"]
+  },
 
-  // CATEGORY: SANDALS
+  // --- CATEGORY: SANDALS ---
   {
     id: "ak-250-grp-sandal-1",
     name: "Essential Strap Sandal",
@@ -239,7 +311,6 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-370-1.jpeg",
     images: ["/images/ak-370-1.jpeg", "/images/ak-370-2.jpeg", "/images/ak-370-3.jpeg", "/images/ak-370-4.jpeg", "/images/ak-370-5.jpeg", "/images/ak-370-6.jpeg", "/images/ak-370-7.jpeg", "/images/ak-370-8.jpeg", "/images/ak-370-9.jpeg"]
   },
-  
   {
     id: "ak-250-gold-glitter",
     name: "Gold Glitter Slingback Sandal",
@@ -272,15 +343,40 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-350-47.jpeg",
     images: ["/images/ak-350-47.jpeg", "/images/ak-350-48.jpeg"]
   },
+  // --- NEW SANDALS ADDED HERE ---
+  {
+    id: "ak-250-multi-brown",
+    name: "Multi-Tone Brown Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-57.jpeg",
+    images: ["/images/ak-250-57.jpeg"]
+  },
+  {
+    id: "ak-300-print-sandal",
+    name: "Brown Print Sandal",
+    price: 300,
+    category: "sandals",
+    coverImage: "/images/ak-300-51.jpeg",
+    images: ["/images/ak-300-51.jpeg"]
+  },
+  {
+    id: "ak-300-black-red-sandal",
+    name: "Bold Two-Tone Sandal",
+    price: 300,
+    category: "sandals",
+    coverImage: "/images/ak-300-55.jpeg",
+    images: ["/images/ak-300-55.jpeg"]
+  },
 
-  // CATEGORY: SLIPPERS
+  // --- CATEGORY: SLIPPERS ---
   {
     id: "ak-200-grp-net",
     name: "Breathable Net Mule",
     price: 200,
     category: "slippers",
     coverImage: "/images/ak-200-9.jpeg",
-    images: ["/images/ak-200-9.jpeg", "/images/ak-200-10.jpeg", "/images/ak-200-11.jpeg", "/images/ak-200-12.jpeg"] // Added ak-200-12
+    images: ["/images/ak-200-9.jpeg", "/images/ak-200-10.jpeg", "/images/ak-200-11.jpeg", "/images/ak-200-12.jpeg"] 
   },
   {
     id: "ak-250-grp-slide",
@@ -304,9 +400,8 @@ export const PRODUCTS: Product[] = [
     price: 350,
     category: "slippers",
     coverImage: "/images/ak-350-21.jpeg",
-    images: ["/images/ak-350-21.jpeg", "/images/ak-350-22.jpeg", "/images/ak-350-23.jpeg", "/images/ak-350-24.jpeg", "/images/ak-350-25.jpeg", "/images/ak-350-49.jpeg", "/images/ak-350-50.jpeg", "/images/ak-350-51.jpeg"] // Added 49, 50, 51
+    images: ["/images/ak-350-21.jpeg", "/images/ak-350-22.jpeg", "/images/ak-350-23.jpeg", "/images/ak-350-24.jpeg", "/images/ak-350-25.jpeg", "/images/ak-350-49.jpeg", "/images/ak-350-50.jpeg", "/images/ak-350-51.jpeg"]
   },
-  
   {
     id: "ak-250-pearl-slipper",
     name: "Pearl Embellished Slipper",
