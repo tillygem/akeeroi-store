@@ -304,6 +304,14 @@ export const PRODUCTS: Product[] = [
     images: ["/images/ak-250-24.jpeg", "/images/ak-250-25.jpeg"]
   },
   {
+    id: "ak-250-sandals",
+    name: "Slingback Pencil Flats",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-300.jpeg",
+    images: ["/images/ak-300.jpeg"]
+  },
+  {
     id: "ak-370-grp-stones",
     name: "Jeweled Strap Sandal",
     price: 370,
@@ -409,5 +417,5 @@ export const PRODUCTS: Product[] = [
     category: "slippers",
     coverImage: "/images/ak-250-52.jpeg",
     images: ["/images/ak-250-52.jpeg"]
-  }
+  },
 ];
