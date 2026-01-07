@@ -144,7 +144,7 @@ export const PRODUCTS: Product[] = [
     id: "ak-300-grp-high",
     name: "Elevated Slingback",
     price: 300,
-    category: "flats", // Kept as flats per original file
+    category: "flats",
     coverImage: "/images/ak-300-10.jpeg",
     images: ["/images/ak-300-10.jpeg", "/images/ak-300-11.jpeg"]
   },
@@ -212,7 +212,6 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-300-41.jpeg",
     images: ["/images/ak-300-41.jpeg"]
   },
-  // --- NEW HEELS ADDED HERE ---
   {
     id: "ak-300-double-sling",
     name: "Burgundy Double-Sling Heel",
@@ -285,6 +284,47 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-300-56.jpeg",
     images: ["/images/ak-300-56.jpeg", "/images/ak-300-57.jpeg"]
   },
+  // --- NEWEST HEELS BATCH ---
+  {
+    id: "ak-300-burgundy-classic",
+    name: "Burgundy Classic Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-58.jpeg",
+    images: ["/images/ak-300-58.jpeg", "/images/ak-300-59.jpeg"]
+  },
+  {
+    id: "ak-300-gold-pearl",
+    name: "Gold Pearl Embellished Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-60.jpeg",
+    images: ["/images/ak-300-60.jpeg"]
+  },
+  {
+    id: "ak-350-bow-block",
+    name: "Bow-Top Block Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-56.jpeg",
+    images: ["/images/ak-350-56.jpeg", "/images/ak-350-57.jpeg"]
+  },
+  {
+    id: "ak-350-white-strappy",
+    name: "White Strappy Slingback",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-58.jpeg",
+    images: ["/images/ak-350-58.jpeg", "/images/ak-350-59.jpeg"]
+  },
+  {
+    id: "ak-400-pearl-stiletto",
+    name: "Pearl High Stiletto",
+    price: 400,
+    category: "heels",
+    coverImage: "/images/ak-400-22.jpeg",
+    images: ["/images/ak-400-22.jpeg", "/images/ak-400-23.jpeg"]
+  },
 
   // --- CATEGORY: SANDALS ---
   {
@@ -351,7 +391,6 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-350-47.jpeg",
     images: ["/images/ak-350-47.jpeg", "/images/ak-350-48.jpeg"]
   },
-  // --- NEW SANDALS ADDED HERE ---
   {
     id: "ak-250-multi-brown",
     name: "Multi-Tone Brown Sandal",
@@ -375,6 +414,15 @@ export const PRODUCTS: Product[] = [
     category: "sandals",
     coverImage: "/images/ak-300-55.jpeg",
     images: ["/images/ak-300-55.jpeg"]
+  },
+  // --- NEWEST SANDALS BATCH ---
+  {
+    id: "ak-250-bow-sandal",
+    name: "Bow Strap Slingback Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-58.jpeg",
+    images: ["/images/ak-250-58.jpeg", "/images/ak-250-59.jpeg", "/images/ak-250-60.jpeg"]
   },
 
   // --- CATEGORY: SLIPPERS ---
@@ -417,5 +465,5 @@ export const PRODUCTS: Product[] = [
     category: "slippers",
     coverImage: "/images/ak-250-52.jpeg",
     images: ["/images/ak-250-52.jpeg"]
-  },
+  }
 ];
