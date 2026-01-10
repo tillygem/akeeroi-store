@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useRouter } from "next/navigation"; 
 import { ShoppingCart, Search, Menu, X, Home, HelpCircle, Instagram, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { useCart } from "@/context/CartContext"; 
+import { useCart } from "@/context/CartContext";
+import { usePathname } from "next/navigation"; 
 
 const TikTokIcon = ({ size = 20, color = "currentColor" }) => (
   <svg xmlns="http://www.w3.org/2000/svg" width={size} height={size} viewBox="0 0 24 24" fill={color}>
@@ -14,11 +15,16 @@ const TikTokIcon = ({ size = 20, color = "currentColor" }) => (
 );
 
 export default function Navbar() {
-  const router = useRouter(); // Initialize Router
+  const router = useRouter(); 
   const [isOpen, setIsOpen] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false); // State for Search Bar
+  const [isSearchOpen, setIsSearchOpen] = useState(false); 
   const [searchQuery, setSearchQuery] = useState(""); 
-  const { cartCount } = useCart(); 
+  const { cartCount } = useCart();
+  const pathname = usePathname();
+  
+  if (pathname.startsWith("/admin")) {
+    return null;
+  }
 
   // Handle Search Submission
   const handleSearch = (e: React.FormEvent) => {

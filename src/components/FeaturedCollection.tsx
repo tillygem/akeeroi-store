@@ -1,14 +1,26 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { PRODUCTS } from "@/data/products"; 
+import { client } from "@/sanity/lib/client"; 
 import ProductCard from "@/components/ProductCard"; 
+
+interface Product {
+  id: string;
+  name: string;
+  price: number;
+  category: any;
+  coverImage: string;
+  images?: string[];
+  isNew?: boolean;
+}
 
 export default function FeaturedCollection() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
+  const [products, setProducts] = useState<Product[]>([]); 
+  const [loading, setLoading] = useState(true);
 
   const toggleDropdown = (name: string) => {
     setActiveDropdown(activeDropdown === name ? null : name);
@@ -25,9 +37,39 @@ export default function FeaturedCollection() {
     "ak-350-grp-kitten-sling" 
   ];
 
-  const displayProducts = FEATURED_ITEMS.map((id) => 
-    PRODUCTS.find((p) => p.id === id)
-  ).filter((p) => p !== undefined);
+  // 3. FETCH DATA FROM SANITY
+  useEffect(() => {
+    async function fetchFeatured() {
+      try {
+        // Query Sanity for ONLY the items in your list
+        const query = `
+          *[_type == "product" && id in $featuredIds] {
+            "id": id,
+            name,
+            price,
+            category,
+            "coverImage": coverImage.asset->url,
+            "images": images[].asset->url,
+            isNew
+          }
+        `;
+        
+        const data = await client.fetch(query, { featuredIds: FEATURED_ITEMS });
+
+        const sortedData = FEATURED_ITEMS.map(id => 
+          data.find((p: Product) => p.id === id)
+        ).filter((p): p is Product => p !== undefined);
+
+        setProducts(sortedData);
+      } catch (error) {
+        console.error("Failed to fetch featured collection:", error);
+      } finally {
+        setLoading(false);
+      }
+    }
+
+    fetchFeatured();
+  }, []);
 
   return (
     <section className="py-20 px-4 md:px-8 bg-white">
@@ -122,11 +164,17 @@ export default function FeaturedCollection() {
       </div>
 
       {/* REAL PRODUCT GRID */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 max-w-7xl mx-auto">
-        {displayProducts.map((product) => (
-          product && <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
+      {loading ? (
+        <div className="flex justify-center items-center py-20">
+          <div className="animate-pulse text-gray-400 text-sm tracking-widest">LOADING COLLECTION...</div>
+        </div>
+      ) : (
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 max-w-7xl mx-auto">
+          {products.map((product) => (
+             <ProductCard key={product.id} product={product as any} />
+          ))}
+        </div>
+      )}
 
       {/* BROWSE ALL BUTTON */}
       <div className="mt-16 text-center">
