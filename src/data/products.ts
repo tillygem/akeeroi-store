@@ -415,7 +415,6 @@ export const PRODUCTS: Product[] = [
     coverImage: "/images/ak-300-55.jpeg",
     images: ["/images/ak-300-55.jpeg"]
   },
-  // --- NEWEST SANDALS BATCH ---
   {
     id: "ak-250-bow-sandal",
     name: "Bow Strap Slingback Sandal",
@@ -465,5 +464,207 @@ export const PRODUCTS: Product[] = [
     category: "slippers",
     coverImage: "/images/ak-250-52.jpeg",
     images: ["/images/ak-250-52.jpeg"]
+  },
+
+  // --- NEW BATCH 2 ---
+  
+  // HEELS
+  {
+    id: "ak-300-strapped-block",
+    name: "Strapped Block Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-63.jpeg",
+    images: ["/images/ak-300-63.jpeg", "/images/ak-300-64.jpeg"]
+  },
+  {
+    id: "ak-300-gold-heel",
+    name: "Gold Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-65.jpeg",
+    images: ["/images/ak-300-65.jpeg"]
+  },
+  {
+    id: "ak-300-burgundy-block",
+    name: "Burgundy Block Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-66.jpeg",
+    images: ["/images/ak-300-66.jpeg"]
+  },
+  {
+    id: "ak-350-burgundy-gold-pencil",
+    name: "Burgundy and Gold Pencil Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-76.jpeg",
+    images: ["/images/ak-350-76.jpeg"]
+  },
+  {
+    id: "ak-350-burgundy-short",
+    name: "Burgundy Short Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-77.jpeg",
+    images: ["/images/ak-350-77.jpeg"]
+  },
+  {
+    id: "ak-350-green-strapped",
+    name: "Green Strapped Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-78.jpeg",
+    images: ["/images/ak-350-78.jpeg"]
+  },
+
+  // FLATS
+  {
+    id: "ak-350-burgundy-flats",
+    name: "Burgundy Flats",
+    price: 350,
+    category: "flats",
+    coverImage: "/images/ak-350-60.jpeg",
+    images: ["/images/ak-350-60.jpeg"]
+  },
+  {
+    id: "ak-350-emerald-flats",
+    name: "Emerald Tone Flats",
+    price: 350,
+    category: "flats",
+    coverImage: "/images/ak-350-69.jpeg",
+    images: ["/images/ak-350-69.jpeg", "/images/ak-350-70.jpeg"]
+  },
+  {
+    id: "ak-200-pearl-flats",
+    name: "Pearl Embellished Flats",
+    price: 200,
+    category: "flats",
+    coverImage: "/images/ak-200-13.jpeg",
+    images: ["/images/ak-200-13.jpeg", "/images/ak-200-14.jpeg", "/images/ak-200-15.jpeg", "/images/ak-200-16.jpeg", "/images/ak-200-17.jpeg"]
+  },
+
+  // SANDALS
+  {
+    id: "ak-350-pearl-sandals",
+    name: "Pearl Embellished Sandals",
+    price: 350,
+    category: "sandals",
+    coverImage: "/images/ak-350-63.jpeg",
+    images: ["/images/ak-350-63.jpeg"]
+  },
+
+  // SLIPPERS
+  {
+    id: "ak-300-white-pearl-slippers",
+    name: "White Pearl Slippers",
+    price: 300,
+    category: "slippers",
+    coverImage: "/images/ak-300-61.jpeg",
+    images: ["/images/ak-300-61.jpeg"]
+  },
+  {
+    id: "ak-300-green-slippers",
+    name: "Green Slippers",
+    price: 300,
+    category: "slippers",
+    coverImage: "/images/ak-300-62.jpeg",
+    images: ["/images/ak-300-62.jpeg"]
+  },
+  {
+    id: "ak-350-brown-slippers",
+    name: "Classic Brown Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-61.jpeg",
+    images: ["/images/ak-350-61.jpeg"]
+  },
+  {
+    id: "ak-350-nude-net-slippers",
+    name: "Nude Net Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-62.jpeg",
+    images: ["/images/ak-350-62.jpeg"]
+  },
+  {
+    id: "ak-350-nude-slippers",
+    name: "Nude Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-64.jpeg",
+    images: ["/images/ak-350-64.jpeg"]
+  },
+  {
+    id: "ak-350-blue-bow-slippers",
+    name: "Blue Bow Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-65.jpeg",
+    images: ["/images/ak-350-65.jpeg"]
+  },
+  {
+    id: "ak-350-black-silver-slippers",
+    name: "Black and Silver Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-66.jpeg",
+    images: ["/images/ak-350-66.jpeg"]
+  },
+  {
+    id: "ak-350-brown-slippers-2",
+    name: "Mocha Brown Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-67.jpeg",
+    images: ["/images/ak-350-67.jpeg"]
+  },
+  {
+    id: "ak-350-black-gold-slippers",
+    name: "Black and Gold Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-68.jpeg",
+    images: ["/images/ak-350-68.jpeg"]
+  },
+  {
+    id: "ak-350-beige-slippers",
+    name: "Beige Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-71.jpeg",
+    images: ["/images/ak-350-71.jpeg"]
+  },
+  {
+    id: "ak-350-glittering-burgundy",
+    name: "Glittering Burgundy Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-72.jpeg",
+    images: ["/images/ak-350-72.jpeg"]
+  },
+  {
+    id: "ak-350-silver-slippers",
+    name: "Silver Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-73.jpeg",
+    images: ["/images/ak-350-73.jpeg"]
+  },
+  {
+    id: "ak-350-mauve-bow",
+    name: "Mauve Bow Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-74.jpeg",
+    images: ["/images/ak-350-74.jpeg"]
+  },
+  {
+    id: "ak-350-red-net",
+    name: "Red Net Slippers",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-75.jpeg",
+    images: ["/images/ak-350-75.jpeg"]
   }
 ];
