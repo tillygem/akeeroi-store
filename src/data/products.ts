@@ -662,9 +662,95 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-350-red-net",
     name: "Red Net Slippers",
-    price: 350,
+    price: 300,
     category: "slippers",
     coverImage: "/images/ak-350-75.jpeg",
     images: ["/images/ak-350-75.jpeg"]
+  },
+  
+  // --- NEW BATCH 3 (Feb Updates) ---
+  
+  // FLATS
+  {
+    id: "ak-250-black-strapped",
+    name: "Black Strapped Flats",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-61.jpeg",
+    images: ["/images/ak-250-61.jpeg"]
+  },
+  {
+    id: "ak-250-black-pencil",
+    name: "Black Pencil Flats",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-62.jpeg",
+    images: ["/images/ak-250-62.jpeg"]
+  },
+
+  // HEELS
+  {
+    id: "ak-300-red-heels",
+    name: "Classic Red Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-67.jpeg",
+    images: ["/images/ak-300-67.jpeg", "/images/ak-300-68.jpeg"]
+  },
+  {
+    id: "ak-300-purple-block",
+    name: "Purple Block Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-69.jpeg",
+    images: ["/images/ak-300-69.jpeg"]
+  },
+  {
+    id: "ak-300-red-block",
+    name: "Red Block Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-70.jpeg",
+    images: ["/images/ak-300-70.jpeg"]
+  },
+  {
+    id: "ak-300-black-glitz",
+    name: "Black Glitz Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-71.jpeg",
+    images: ["/images/ak-300-71.jpeg"]
+  },
+  {
+    id: "ak-300-white-heel",
+    name: "Classic White Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-72.jpeg",
+    images: ["/images/ak-300-72.jpeg"]
+  },
+  {
+    id: "ak-300-beige-print",
+    name: "Beige Print Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-73.jpeg",
+    images: ["/images/ak-300-73.jpeg"]
+  },
+  {
+    id: "ak-350-red-leather",
+    name: "Red Leather Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-79.jpeg",
+    images: ["/images/ak-350-79.jpeg"]
+  },
+  {
+    id: "ak-350-gem-short",
+    name: "Gem Embellished Short Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-80.jpeg",
+    images: ["/images/ak-350-80.jpeg", "/images/ak-350-81.jpeg", "/images/ak-350-82.jpeg"]
   }
 ];
