@@ -752,5 +752,49 @@ export const PRODUCTS: Product[] = [
     category: "heels",
     coverImage: "/images/ak-350-80.jpeg",
     images: ["/images/ak-350-80.jpeg", "/images/ak-350-81.jpeg", "/images/ak-350-82.jpeg"]
+  },
+
+  // FLATS (250 GHS)
+  {
+    id: "ak-250-burgundy-gold",
+    name: "Burgundy & Gold Flats",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-63.jpeg",
+    images: ["/images/ak-250-63.jpeg", "/images/ak-250-64.jpeg"]
+  },
+  {
+    id: "ak-250-black-strapped-v2",
+    name: "Black Strapped Flats II",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-65.jpeg",
+    images: ["/images/ak-250-65.jpeg"]
+  },
+  {
+    id: "ak-250-pink-bow",
+    name: "Pink Bow Flats",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-66.jpeg",
+    images: ["/images/ak-250-66.jpeg", "/images/ak-250-67.jpeg"]
+  },
+  {
+    id: "ak-250-black-bow",
+    name: "Black Bow Flats",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-68.jpeg",
+    images: ["/images/ak-250-68.jpeg", "/images/ak-250-69.jpeg"]
+  },
+
+  // FLATS (300 GHS)
+  {
+    id: "ak-300-burgundy-silver",
+    name: "Burgundy & Silver Flats",
+    price: 300,
+    category: "flats",
+    coverImage: "/images/ak-300-74.jpeg",
+    images: ["/images/ak-300-74.jpeg", "/images/ak-300-75.jpeg"]
   }
 ];
