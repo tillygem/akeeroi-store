@@ -796,5 +796,55 @@ export const PRODUCTS: Product[] = [
     category: "flats",
     coverImage: "/images/ak-300-74.jpeg",
     images: ["/images/ak-300-74.jpeg", "/images/ak-300-75.jpeg"]
+  },
+
+  // --- NEW BATCH 5 (New Arrivals) ---
+
+  // HEELS (350 GHS)
+  {
+    id: "ak-350-bow-block-pastel",
+    name: "Pastel Bow Block Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-83.jpeg",
+    images: ["/images/ak-350-83.jpeg", "/images/ak-350-84.jpeg", "/images/ak-350-85.jpeg", "/images/ak-350-86.jpeg"]
+  },
+
+  // HEELS (300 GHS)
+  {
+    id: "ak-300-black-diamond-heel",
+    name: "Black Diamond Bow Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-77.jpeg",
+    images: ["/images/ak-300-77.jpeg", "/images/ak-300-78.jpeg"]
+  },
+
+  // FLATS (300 GHS)
+  {
+    id: "ak-300-pink-pencil-mule",
+    name: "Pink Pencil Half-Shoe",
+    price: 300,
+    category: "flats",
+    coverImage: "/images/ak-300-76.jpeg",
+    images: ["/images/ak-300-76.jpeg"]
+  },
+
+  // FLATS (250 GHS)
+  {
+    id: "ak-250-brown-half-shoe",
+    name: "Brown Half-Shoe Flat",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-70.jpeg",
+    images: ["/images/ak-250-70.jpeg", "/images/ak-250-71.jpeg"]
+  },
+  {
+    id: "ak-250-brown-sling-sandal",
+    name: "Brown Slingback Sandal",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-72.jpeg",
+    images: ["/images/ak-250-72.jpeg"]
   }
 ];
