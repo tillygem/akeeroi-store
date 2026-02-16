@@ -846,5 +846,37 @@ export const PRODUCTS: Product[] = [
     category: "flats",
     coverImage: "/images/ak-250-72.jpeg",
     images: ["/images/ak-250-72.jpeg"]
+  },
+
+  // --- NEW BATCH 7 (New Arrivals) ---
+
+  // SANDALS (250 GHS)
+  {
+    id: "ak-250-brown-glitter-sandal",
+    name: "Brown Glittering Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-73.jpeg",
+    images: ["/images/ak-250-73.jpeg", "/images/ak-250-74.jpeg"]
+  },
+
+  // SLIPPERS (300 GHS)
+  {
+    id: "ak-300-blinking-stone-slippers",
+    name: "Blinking Stone Slippers (Mixed)",
+    price: 300,
+    category: "slippers",
+    coverImage: "/images/ak-300-79.jpeg",
+    images: ["/images/ak-300-79.jpeg", "/images/ak-300-80.jpeg", "/images/ak-300-81.jpeg", "/images/ak-300-82.jpeg"]
+  },
+
+  // SLIPPERS (200 GHS)
+  {
+    id: "ak-200-pearl-print-slipper",
+    name: "Pearl Edge Print Slipper",
+    price: 200,
+    category: "slippers",
+    coverImage: "/images/ak-200-18.jpeg",
+    images: ["/images/ak-200-18.jpeg"]
   }
 ];
