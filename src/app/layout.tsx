@@ -22,10 +22,46 @@ const greatVibes = Great_Vibes({
   variable: "--font-great-vibes",
 });
 
+const baseUrl = 'https://www.akeeroi.com'; 
+
 export const metadata: Metadata = {
-  title: "Akee-roi Collections | Luxury Footwear",
+  metadataBase: new URL(baseUrl),
+  title: {
+    default: "Akee-roi Collections | Luxury Footwear",
+    template: "%s | Akee-roi Collections"
+  },
   description: "Elegant heels, sandals, and shoes for the sophisticated woman.",
+  keywords: ["women's shoes", "luxury heels", "comfortable flats", "Akee-roi collections", "fashion footwear Ghana", "luxury sandals"],
+  
+  openGraph: {
+    title: "Akee-roi Collections | Luxury Footwear",
+    description: "Elegant heels, sandals, and shoes for the sophisticated woman.",
+    url: baseUrl,
+    siteName: "Akee-roi Collections",
+    images: [
+      {
+        url: "/images/shoes.png", 
+        width: 1200,
+        height: 630,
+        alt: "Akee-roi Collections Luxury Footwear",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Akee-roi Collections | Luxury Footwear",
+    description: "Elegant heels, sandals, and shoes for the sophisticated woman.",
+    images: ["/images/shoes.png"], 
+  },
+  
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
+
 
 export default function RootLayout({
   children,
