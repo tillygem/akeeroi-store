@@ -878,5 +878,54 @@ export const PRODUCTS: Product[] = [
     category: "slippers",
     coverImage: "/images/ak-200-18.jpeg",
     images: ["/images/ak-200-18.jpeg"]
+  },
+  // --- NEW BATCH 8 (New Arrivals) ---
+
+  // HEELS (300 GHS)
+  {
+    id: "ak-300-green-white-short-heel",
+    name: "Green & White Short Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-83.jpeg",
+    images: ["/images/ak-300-83.jpeg", "/images/ak-300-84.jpeg"]
+  },
+  {
+    id: "ak-300-burgundy-scarf-heel",
+    name: "Burgundy Scarf-Strap Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-85.jpeg",
+    images: ["/images/ak-300-85.jpeg", "/images/ak-300-86.jpeg"]
+  },
+
+  // SANDALS (250 GHS)
+  {
+    id: "ak-250-lemon-green-sandal",
+    name: "Lemon Green Strap Sandals",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-75.jpeg",
+    images: ["/images/ak-250-75.jpeg", "/images/ak-250-76.jpeg", "/images/ak-250-77.jpeg"]
+  },
+
+  // SANDALS (350 GHS)
+  {
+    id: "ak-350-burgundy-360-bow-sandal",
+    name: "Burgundy 360 Side-Bow Sandal",
+    price: 350,
+    category: "sandals",
+    coverImage: "/images/ak-350-87.jpeg",
+    images: ["/images/ak-350-87.jpeg", "/images/ak-350-88.jpeg", "/images/ak-350-89.jpeg", "/images/ak-350-90.jpeg"]
+  },
+
+  // FLATS (350 GHS)
+  {
+    id: "ak-350-burgundy-bow-flat",
+    name: "Burgundy Bow Pencil Flat",
+    price: 350,
+    category: "flats",
+    coverImage: "/images/ak-350-91.jpeg",
+    images: ["/images/ak-350-91.jpeg", "/images/ak-350-92.jpeg", "/images/ak-350-93.jpeg"]
   }
 ];
