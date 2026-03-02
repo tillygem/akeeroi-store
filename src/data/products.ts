@@ -947,5 +947,26 @@ export const PRODUCTS: Product[] = [
     category: "flats",
     coverImage: "/images/ak-300-90.jpeg",
     images: ["/images/ak-300-90.jpeg", "/images/ak-300-91.jpeg", "/images/ak-300-92.jpeg", "/images/ak-300-93.jpeg"]
+  },
+  // --- NEW BATCH 10 (The "Just One More Thing" Arrivals) ---
+
+  // SLIPPERS (300 GHS)
+  {
+    id: "ak-300-brown-woven-slide",
+    name: "Chocolate Brown Woven Slide",
+    price: 300,
+    category: "slippers",
+    coverImage: "/images/ak-300-94.jpeg",
+    images: ["/images/ak-300-94.jpeg", "/images/ak-300-95.jpeg"]
+  },
+
+  // SLIPPERS (250 GHS)
+  {
+    id: "ak-250-jeweled-strappy-slide",
+    name: "Jeweled Strappy Brown Slipper",
+    price: 250,
+    category: "slippers",
+    coverImage: "/images/ak-250-78.jpeg",
+    images: ["/images/ak-250-78.jpeg", "/images/ak-250-79.jpeg", "/images/ak-250-80.jpeg"]
   }
 ];
