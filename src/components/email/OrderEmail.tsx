@@ -76,10 +76,10 @@ export const OrderEmail: React.FC<OrderEmailProps> = ({
             <p style={{ margin: '0 0 15px 0', fontSize: '14px', lineHeight: '1.5' }}>
               Please send the total amount via Mobile Money or our Bank to confirm your order.
             </p>
-            <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 054 374 4805</div>
-            <div style={{ fontSize: '14px' }}>Name: Ernestina Obiyaa</div>
-            <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 024 338 6458</div>
-            <div style={{ fontSize: '14px' }}>Name: Victoria Opoku Konadu</div>
+            <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 055 287 8124</div>
+            <div style={{ fontSize: '14px' }}>Name: Matilda Esenam Gbeve</div>
+            <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>MTN MOMO: 055 934 3610</div>
+            <div style={{ fontSize: '14px' }}>Name: Matilda Esenam Gbeve</div>
             <div style={{ fontSize: '16px', fontWeight: 'bold', marginBottom: '5px' }}>ECOBANK: 1441002495733</div>
             <div style={{ fontSize: '14px' }}>Name: Esther Kwarteng</div>
             <p style={{ marginTop: '15px', fontSize: '12px', fontStyle: 'italic', opacity: 0.8 }}>

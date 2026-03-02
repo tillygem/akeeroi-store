@@ -452,7 +452,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-350-grp-pastel",
     name: "Pastel Comfort Slide",
-    price: 350,
+    price: 300,
     category: "slippers",
     coverImage: "/images/ak-350-21.jpeg",
     images: ["/images/ak-350-21.jpeg", "/images/ak-350-22.jpeg", "/images/ak-350-23.jpeg", "/images/ak-350-24.jpeg", "/images/ak-350-25.jpeg", "/images/ak-350-49.jpeg", "/images/ak-350-50.jpeg", "/images/ak-350-51.jpeg"]
