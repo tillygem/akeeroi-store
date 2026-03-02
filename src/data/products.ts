@@ -101,7 +101,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-350-grp-loafers",
     name: "Classic Loafer",
-    price: 350,
+    price: 300,
     category: "flats",
     coverImage: "/images/ak-350-39.jpeg",
     images: ["/images/ak-350-39.jpeg", "/images/ak-350-40.jpeg", "/images/ak-350-41.jpeg", "/images/ak-350-42.jpeg", "/images/ak-350-43.jpeg"]
@@ -183,7 +183,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-500-luxury",
     name: "Luxury Block Heel",
-    price: 500,
+    price: 400,
     category: "heels",
     coverImage: "/images/ak-500.jpeg",
     images: ["/images/ak-500.jpeg"]
@@ -191,7 +191,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-500-high",
     name: "Statement High Heel",
-    price: 500,
+    price: 400,
     category: "heels",
     coverImage: "/images/ak-500-1.jpeg",
     images: ["/images/ak-500-1.jpeg"]
@@ -207,7 +207,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-300-grp-sling-block",
     name: "Classic Slingback Block Heel",
-    price: 300,
+    price: 250,
     category: "heels",
     coverImage: "/images/ak-300-41.jpeg",
     images: ["/images/ak-300-41.jpeg"]
@@ -885,7 +885,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-300-green-white-short-heel",
     name: "Green & White Short Heel",
-    price: 300,
+    price: 250,
     category: "heels",
     coverImage: "/images/ak-300-83.jpeg",
     images: ["/images/ak-300-83.jpeg", "/images/ak-300-84.jpeg"]
@@ -927,5 +927,25 @@ export const PRODUCTS: Product[] = [
     category: "flats",
     coverImage: "/images/ak-350-91.jpeg",
     images: ["/images/ak-350-91.jpeg", "/images/ak-350-92.jpeg", "/images/ak-350-93.jpeg"]
+  },
+
+  // --- NEW BATCH 9 (New Arrivals) ---
+
+  // FLATS (300 GHS)
+  {
+    id: "ak-300-nude-chain-mule",
+    name: "Nude Gold-Chain Pointed Mule",
+    price: 300,
+    category: "flats",
+    coverImage: "/images/ak-300-87.jpeg",
+    images: ["/images/ak-300-87.jpeg", "/images/ak-300-88.jpeg", "/images/ak-300-89.jpeg"]
+  },
+  {
+    id: "ak-300-floral-ankle-bow-flat",
+    name: "Floral Tapestry Ankle-Bow Flat",
+    price: 300,
+    category: "flats",
+    coverImage: "/images/ak-300-90.jpeg",
+    images: ["/images/ak-300-90.jpeg", "/images/ak-300-91.jpeg", "/images/ak-300-92.jpeg", "/images/ak-300-93.jpeg"]
   }
 ];
