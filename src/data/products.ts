@@ -143,7 +143,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-300-grp-high",
     name: "Elevated Slingback",
-    price: 300,
+    price: 250,
     category: "flats",
     coverImage: "/images/ak-300-10.jpeg",
     images: ["/images/ak-300-10.jpeg", "/images/ak-300-11.jpeg"]
@@ -428,7 +428,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-200-grp-net",
     name: "Breathable Net Mule",
-    price: 200,
+    price: 150,
     category: "slippers",
     coverImage: "/images/ak-200-9.jpeg",
     images: ["/images/ak-200-9.jpeg", "/images/ak-200-10.jpeg", "/images/ak-200-11.jpeg", "/images/ak-200-12.jpeg"] 
@@ -548,7 +548,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-350-pearl-sandals",
     name: "Pearl Embellished Sandals",
-    price: 350,
+    price: 300,
     category: "sandals",
     coverImage: "/images/ak-350-63.jpeg",
     images: ["/images/ak-350-63.jpeg"]
@@ -590,7 +590,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-350-nude-slippers",
     name: "Nude Slippers",
-    price: 350,
+    price: 300,
     category: "slippers",
     coverImage: "/images/ak-350-64.jpeg",
     images: ["/images/ak-350-64.jpeg"]
@@ -792,7 +792,7 @@ export const PRODUCTS: Product[] = [
   {
     id: "ak-300-burgundy-silver",
     name: "Burgundy & Silver Flats",
-    price: 300,
+    price: 250,
     category: "flats",
     coverImage: "/images/ak-300-74.jpeg",
     images: ["/images/ak-300-74.jpeg", "/images/ak-300-75.jpeg"]
