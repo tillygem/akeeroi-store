@@ -968,5 +968,45 @@ export const PRODUCTS: Product[] = [
     category: "slippers",
     coverImage: "/images/ak-250-78.jpeg",
     images: ["/images/ak-250-78.jpeg", "/images/ak-250-79.jpeg", "/images/ak-250-80.jpeg"]
+  },
+
+  // SANDALS (250 GHS)
+  {
+    id: "ak-250-gold-floral-sandal",
+    name: "Gold Floral Embellished Sandal",
+    price: 250,
+    category: "sandals",
+    coverImage: "/images/ak-250-81.jpeg",
+    images: ["/images/ak-250-81.jpeg", "/images/ak-250-82.jpeg", "/images/ak-250-83.jpeg", "/images/ak-250-84.jpeg", "/images/ak-250-85.jpeg"]
+  },
+
+  // SLIPPERS (350 GHS)
+  {
+    id: "ak-350-minimalist-wide-slide",
+    name: "Minimalist Wide-Strap Slide",
+    price: 350,
+    category: "slippers",
+    coverImage: "/images/ak-350-94.jpeg",
+    images: ["/images/ak-350-94.jpeg", "/images/ak-350-95.jpeg", "/images/ak-350-101.jpeg", "/images/ak-350-102.jpeg"]
+  },
+
+  // SANDALS (350 GHS)
+  {
+    id: "ak-350-metallic-woven-sandal",
+    name: "Metallic Gold Woven Sandal",
+    price: 350,
+    category: "sandals",
+    coverImage: "/images/ak-350-96.jpeg",
+    images: ["/images/ak-350-96.jpeg", "/images/ak-350-97.jpeg"]
+  },
+
+  // HEELS (350 GHS)
+  {
+    id: "ak-350-gold-pleated-mule",
+    name: "Gold Pleated Block Heel Mule",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-98.jpeg",
+    images: ["/images/ak-350-98.jpeg", "/images/ak-350-99.jpeg", "/images/ak-350-100.jpeg"]
   }
 ];
