@@ -1008,5 +1008,122 @@ export const PRODUCTS: Product[] = [
     category: "heels",
     coverImage: "/images/ak-350-98.jpeg",
     images: ["/images/ak-350-98.jpeg", "/images/ak-350-99.jpeg", "/images/ak-350-100.jpeg"]
+  },
+  // 250 GHS CATEGORY
+  {
+    id: "ak-250-pink-satin-pearl",
+    name: "Pink Satin Pearl Kitten Heel",
+    price: 250,
+    category: "heels",
+    coverImage: "/images/ak-250-86.jpeg",
+    images: ["/images/ak-250-86.jpeg", "/images/ak-250-87.jpeg"]
+  },
+  {
+    id: "ak-250-black-suede-crystal",
+    name: "Black Suede Crystal Buckle Heel",
+    price: 250,
+    category: "heels",
+    coverImage: "/images/ak-250-88.jpeg",
+    images: ["/images/ak-250-88.jpeg", "/images/ak-250-89.jpeg"]
+  },
+  {
+    id: "ak-250-silver-double-buckle",
+    name: "Silver Double-Buckle Pointed Mule",
+    price: 250,
+    category: "flats",
+    coverImage: "/images/ak-250-90.jpeg",
+    images: ["/images/ak-250-90.jpeg", "/images/ak-250-91.jpeg"]
+  },
+  {
+    id: "ak-250-brown-mesh-bow",
+    name: "Brown Mesh Bow Heel",
+    price: 250,
+    category: "heels",
+    coverImage: "/images/ak-250-92.jpeg",
+    images: ["/images/ak-250-92.jpeg", "/images/ak-250-93.jpeg"]
+  },
+  {
+    id: "ak-250-brown-croc-kitten",
+    name: "Brown Croc-Embossed Kitten Heel",
+    price: 250,
+    category: "heels",
+    coverImage: "/images/ak-250-94.jpeg",
+    images: ["/images/ak-250-94.jpeg", "/images/ak-250-95.jpeg"]
+  },
+
+  // 300 GHS CATEGORY
+  {
+    id: "ak-300-monogram-chain-mule",
+    name: "Monogram Gold-Chain Mule",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-96.jpeg",
+    images: ["/images/ak-300-96.jpeg", "/images/ak-300-97.jpeg", "/images/ak-300-98.jpeg"]
+  },
+  {
+    id: "ak-300-brown-satin-stiletto",
+    name: "Brown Satin Bow Stiletto",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-99.jpeg",
+    images: ["/images/ak-300-99.jpeg", "/images/ak-300-100.jpeg"]
+  },
+  {
+    id: "ak-300-burgundy-patent-rose",
+    name: "Burgundy Patent Rose Stiletto",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-101.jpeg",
+    images: ["/images/ak-300-101.jpeg", "/images/ak-300-102.jpeg"]
+  },
+  {
+    id: "ak-300-brown-gold-bow",
+    name: "Brown & Gold Metallic Bow Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-103.jpeg",
+    images: ["/images/ak-300-103.jpeg", "/images/ak-300-104.jpeg"]
+  },
+  {
+    id: "ak-300-burgundy-textured-bow",
+    name: "Burgundy Textured Bow Heel",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-105.jpeg",
+    images: ["/images/ak-300-105.jpeg", "/images/ak-300-106.jpeg"]
+  },
+  {
+    id: "ak-300-pink-lace-mule",
+    name: "Pink Lace Square-Toe Mule",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-107.jpeg",
+    images: ["/images/ak-300-107.jpeg", "/images/ak-300-108.jpeg"]
+  },
+  {
+    id: "ak-300-net-pointed-stiletto",
+    name: "Net Pointed Stiletto (Mixed Colors)",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-109.jpeg",
+    images: ["/images/ak-300-109.jpeg", "/images/ak-300-110.jpeg", "/images/ak-300-111.jpeg", "/images/ak-300-112.jpeg", "/images/ak-300-113.jpeg"]
+  },
+  {
+    id: "ak-300-strappy-net-stiletto",
+    name: "Strappy Net Stiletto",
+    price: 300,
+    category: "heels",
+    coverImage: "/images/ak-300-114.jpeg",
+    images: ["/images/ak-300-114.jpeg", "/images/ak-300-115.jpeg"]
+  },
+
+  // 350 GHS CATEGORY
+  {
+    id: "ak-350-tiger-print-heel",
+    name: "Tiger Print Pointed Heel",
+    price: 350,
+    category: "heels",
+    coverImage: "/images/ak-350-103.jpeg",
+    images: ["/images/ak-350-103.jpeg", "/images/ak-350-104.jpeg"]
   }
 ];
