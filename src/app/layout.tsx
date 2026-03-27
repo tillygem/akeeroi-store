@@ -72,6 +72,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${montserrat.className} ${greatVibes.variable} bg-[#FDFBF7] text-gray-900`}>
         <CartProvider>
+        <div className="absolute top-0 left-0 w-full h-7 flex items-center justify-center bg-[#D4AF37] text-[#800020] px-2 text-[10px] md:text-xs font-bold tracking-widest z-100 overflow-hidden">
+            <span className="hidden md:inline">
+             ✨ 50% DISCOUNT SALES! SHOP OUR EXCLUSIVE PROMO FROM NOW TO 3RD APRIL. ✨
+            </span>
+            <span className="md:hidden">
+              ✨ 50% OFF PROMO! VALID UNTIL APRIL 3RD ✨
+            </span>
+          </div>
         <Navbar />  
           {children}
           <Footer />
