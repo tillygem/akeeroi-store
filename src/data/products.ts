@@ -1125,5 +1125,16 @@ export const PRODUCTS: Product[] = [
     category: "heels",
     coverImage: "/images/ak-350-103.jpeg",
     images: ["/images/ak-350-103.jpeg", "/images/ak-350-104.jpeg"]
+  },
+  // --- NEW BATCH 13 (Single Gold Slide) ---
+
+  // SLIPPERS (250 GHS)
+  {
+    id: "ak-250-gold-caged-slide",
+    name: "Gold Metallic Caged Slide",
+    price: 250,
+    category: "slippers",
+    coverImage: "/images/ak-250-96.jpg",
+    images: ["/images/ak-250-96.jpg", "/images/ak-250-97.jpg"]
   }
 ];
