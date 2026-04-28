@@ -42,6 +42,7 @@ export default function Newsletter() {
           alt="Exclusive Access Background"
           fill
           className="object-cover object-center"
+          unoptimized
         />
         <div className="absolute inset-0 bg-black/60" />
       </div>

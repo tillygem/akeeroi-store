@@ -142,7 +142,7 @@ export default function CheckoutPage() {
                     
                     {/* Image */}
                     <div className="relative w-20 h-24 bg-gray-100 rounded overflow-hidden shrink-0 shadow-sm">
-                      <Image src={item.image} alt={item.name} fill className="object-cover" />
+                      <Image src={item.image} alt={item.name} fill className="object-cover" unoptimized />
                     </div>
 
                     {/* Details & Controls */}

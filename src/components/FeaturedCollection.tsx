@@ -48,8 +48,8 @@ export default function FeaturedCollection() {
             name,
             price,
             category,
-            "coverImage": coverImage.asset->url,
-            "images": images[].asset->url,
+            "coverImage": coverImage.asset->url + "?w=600&fm=webp&q=80",
+            "images": images[].asset->url + "?w=600&fm=webp&q=80",
             isNew
           }
         `;

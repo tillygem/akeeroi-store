@@ -79,6 +79,7 @@ export default function ProductDetailsPage() {
                     alt={product.name}
                     fill
                     className="object-cover"
+                    unoptimized
                   />
                 </div>
               </div>
@@ -129,6 +130,7 @@ export default function ProductDetailsPage() {
                 fill
                 className="object-cover transition-all duration-500"
                 priority
+                unoptimized
               />
                {product.price >= 400 && (
                 <div className="absolute top-4 right-4 bg-[#D4AF37] text-white text-xs font-bold px-3 py-1 uppercase tracking-wider shadow-lg">
@@ -187,7 +189,7 @@ export default function ProductDetailsPage() {
                           : "border-gray-200 opacity-70 hover:opacity-100 hover:border-[#800020]"
                       }`}
                     >
-                      <Image src={img} alt={`Color ${idx}`} fill className="object-cover" />
+                      <Image src={img} alt={`Color ${idx}`} fill className="object-cover" unoptimized />
                     </button>
                   ))}
                 </div>
@@ -276,7 +278,7 @@ export default function ProductDetailsPage() {
                 .map(related => (
                   <Link href={`/product/${related.id}`} key={related.id} className="group">
                      <div className="relative w-full aspect-4/5 bg-gray-100 rounded-lg overflow-hidden mb-3">
-                        <Image src={related.coverImage} alt={related.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" />
+                        <Image src={related.coverImage} alt={related.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" unoptimized />
                      </div>
                      <h3 className="text-sm font-medium text-gray-900 truncate group-hover:text-[#800020]">{related.name}</h3>
                      <p className="text-xs text-gray-500">GHS {related.price.toFixed(2)}</p>

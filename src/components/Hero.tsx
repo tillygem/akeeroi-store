@@ -17,6 +17,7 @@ export default function Hero() {
           fill
           className="object-cover object-center"
           priority
+          unoptimized
         />
         {/* Overlay */}
         <div className="absolute inset-0 bg-[#420010]/40" />

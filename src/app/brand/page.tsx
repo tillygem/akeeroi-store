@@ -13,6 +13,7 @@ export default function BrandPage() {
           fill
           className="object-cover"
           priority
+          unoptimized
         />
         <div className="absolute inset-0 bg-[#420010]/60" /> 
         
@@ -37,6 +38,7 @@ export default function BrandPage() {
               alt="Global Sourcing"
               fill
               className="object-cover"
+              unoptimized
             />
           </div>
 
@@ -126,16 +128,16 @@ export default function BrandPage() {
 
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-7xl mx-auto">
              <div className="relative aspect-square group overflow-hidden rounded-lg">
-               <Image src="/images/brand-ig-1.png" alt="Moodboard 1" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+               <Image src="/images/brand-ig-1.png" alt="Moodboard 1" fill className="object-cover transition-transform duration-500 group-hover:scale-110" unoptimized />
              </div>
              <div className="relative aspect-square group overflow-hidden rounded-lg">
-               <Image src="/images/ak-500-1.jpeg" alt="Moodboard 2" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+               <Image src="/images/ak-500-1.jpeg" alt="Moodboard 2" fill className="object-cover transition-transform duration-500 group-hover:scale-110" unoptimized />
              </div>
              <div className="relative aspect-square group overflow-hidden rounded-lg">
-               <Image src="/images/brand-ig-3.png" alt="Moodboard 3" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+               <Image src="/images/brand-ig-3.png" alt="Moodboard 3" fill className="object-cover transition-transform duration-500 group-hover:scale-110" unoptimized />
              </div>
              <div className="relative aspect-square group overflow-hidden rounded-lg">
-               <Image src="/images/brand-ig-4.png" alt="Moodboard 4" fill className="object-cover transition-transform duration-500 group-hover:scale-110" />
+               <Image src="/images/brand-ig-4.png" alt="Moodboard 4" fill className="object-cover transition-transform duration-500 group-hover:scale-110" unoptimized />
              </div>
           </div>
       </section>

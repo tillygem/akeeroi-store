@@ -61,6 +61,7 @@ export default function ProductCard({ product }: ProductCardProps) {
           alt={product.name}
           fill
           className="object-cover transition-transform duration-700 group-hover:scale-105"
+          unoptimized
         />
 
         {/* SWIPE ARROWS (Only show if multiple images exist) */}

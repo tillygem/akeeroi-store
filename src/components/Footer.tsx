@@ -159,6 +159,7 @@ export default function Footer() {
                   width={40} 
                   height={24} 
                   className="object-contain h-full w-auto" 
+                  unoptimized
                 />
              </div>
              
@@ -170,6 +171,7 @@ export default function Footer() {
                   width={40} 
                   height={24} 
                   className="object-contain h-full w-auto" 
+                  unoptimized
                 />
              </div>
              
@@ -181,6 +183,7 @@ export default function Footer() {
                   width={40} 
                   height={24} 
                   className="object-contain h-full w-auto" 
+                  unoptimized
                 />
              </div>
           </div>
