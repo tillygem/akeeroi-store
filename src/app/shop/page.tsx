@@ -1,6 +1,8 @@
 import { client } from "@/sanity/lib/client";
 import ProductCard from "@/components/ProductCard";
 
+export const dynamic = "force-dynamic";
+
 // Fetch from Sanity ONLY
 async function getSanityProducts() {
   const query = `
